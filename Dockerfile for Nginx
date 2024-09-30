@@ -1,0 +1,8 @@
+# Nginx Dockerfile
+FROM nginx:alpine
+
+# Copy the static HTML/CSS files to Nginx's default folder
+COPY . /usr/share/nginx/html
+
+# Expose port 80 for the Nginx server
+EXPOSE 80
